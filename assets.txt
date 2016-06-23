@@ -1,0 +1,10 @@
+Assets
+
+Main Blue
+#00aeef
+
+Darker Blue
+#0b6c90
+
+Fonts
+https://fonts.google.com/specimen/Roboto?category=Sans+Serif
