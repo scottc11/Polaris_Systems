@@ -6,6 +6,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
 hr {
   border-color: black;
   border-width: 2px;
@@ -85,13 +89,13 @@ hr {
 .main-heading-container h2 {
   color: #00aeef;
   font-size: 1.3em;
-  margin-bottom: 0;
+  margin: 10px 0 10px 0;
 }
 
 .main-heading-container h3 {
   color: black;
   font-size: 1em;
-  margin-top: 0;
+  margin: 10px 0 10px 0;
 }
 
 
@@ -99,6 +103,7 @@ hr {
 .heading-image img {
   width: 100%;
   height: auto;
+  margin: 10px 0 10px 0;
 }
 
 .main-heading-container h5 {
@@ -121,6 +126,7 @@ hr {
 .products-heading h1 {
   text-decoration: underline;
   text-decoration-color: #00aeef;
+  margin: 20px 0 20px 0;
 }
 
 .product-box {
