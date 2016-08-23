@@ -1,5 +1,16 @@
 /*#0b6c90*/
 /*#00aeef*/
+
+/*COLOR SCHEME*/
+/*
+#0BB2F0;
+#107092;
+#3DC7C9;
+#40BBF1;
+#C4E0EB;
+*/
+
+
 /*font-family: 'Roboto', sans-serif;*/
 
 body {
@@ -10,22 +21,60 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
 hr {
   border-color: black;
   border-width: 2px;
   margin: 20px 0 20px 0;
 }
 
+.underlined-header-container {
+  display: inline-block;
+}
+
+.underline-hr {
+  border-color: #00aeef;
+  border-width: 2px;
+  margin: 0;
+}
+
+
+
+/*--------------------------------------*/
+/*        GLOBAL CLASSES                */
+/*--------------------------------------*/
+
+
 .color-accent-red {
   color: red;
 }
 
-#under-construction {
-  background-color: yellow;
-  text-align: center;
-
+.color-accent-dark-blue {
+  color: #0b6c90;
 }
 
+.color-accent-baby-blue {
+  color: #00aeef;
+}
+
+.under-line-blue {
+  text-decoration: underline;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-minimal {
+  margin: 5px 0 5px 0;
+}
 
 .vertical-center {
   position: relative;
@@ -36,6 +85,22 @@ hr {
 .horizontal-center {
   text-align: center;
 }
+
+
+
+#under-construction {
+  background-color: yellow;
+  text-align: center;
+
+}
+
+
+
+
+/*--------------------------------------*/
+/*        HEADER CLASSES                */
+/*--------------------------------------*/
+
 
 .header-background {
   background-color: #00aeef;
@@ -254,9 +319,48 @@ hr {
   margin: 10px 20px 10px 20px;
 }
 
-/**************************
-******** FOOTER ********
-**************************/
+
+/*--------------------------------------*/
+/*        CONTACT PAGE CLASSES          */
+/*--------------------------------------*/
+
+.contact-form {
+}
+
+.map-container {
+  box-sizing: border-box;
+  border: 1px dashed black;
+  height: 400px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  padding: 5px;
+  background-color: #C4E0EB;
+  border: none;
+  font-weight: bold;
+}
+
+.google-maps {
+  width: 100%;
+  height: 400px;
+}
+
+.contact-form input[type=submit] {
+  width: auto;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: normal;
+  background-color: #40BBF1;
+}
+
+/*--------------------------------------*/
+/*        FOOTER                        */
+/*--------------------------------------*/
 
 .footer-background {
   background-color: #0b6c90;
