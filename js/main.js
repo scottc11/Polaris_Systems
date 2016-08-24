@@ -1,1 +1,4 @@
 
+
+
+$(('#contact-name')).onClick.reset();

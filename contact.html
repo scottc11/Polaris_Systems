@@ -39,7 +39,7 @@
 
                 <div class="header-nav-container col-xs-3 col-xs-offset-3 col-sm-8 col-sm-offset-0 col-md-6 col-md-offset-3">
                   <ul class="nav vertical-center ">
-                    <li><a href="#products">Products</a></li>
+                    <li><a href="product-page">Products</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#footer">Contact</a></li>
                     <li id="menu-hamburger"><a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
@@ -87,9 +87,9 @@
               </div>
 
               <form class="contact-form">
-                <input type="text" name="contact" value="Contact Name:">
+                <input id="contact-name" type="text" name="contact" placeholder="Contact Name:">
 
-                <input type="text" name="contact" value="Email Address:">
+                <input id="contact-email" type="text" name="contact" placeholder="Email Address:">
 
                 <select class="select-style" name="interest">
                   <option value="machine">I'm interested in:</option>
@@ -98,7 +98,7 @@
                   <option value="machine">Machine</option>
                 </select>
 
-                <textarea name="message" rows="8">Message</textarea>
+                <textarea name="message" placeholder="Message:" rows="8"></textarea>
 
                 <input type="submit" name="name" value="Send">
 
@@ -109,21 +109,65 @@
 
 
             <div class="map-container col-xs-12 col-md-6">
-              <div class="google-maps">
+              <div id="google-maps">
 
               </div>
-              <script>
+
+              <div class="">
+                <h5>Or visit us in person:</h5>
+                <h4 class="color-accent-baby-blue">2220 Argentia Road Unit #8, Mississauga, ON, Canada L5N 2K7</h4>
+              </div>
+
+              <!-- GOOGLE MAPS API -->
+
+              <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyerVxVUe9Hn08pP-IF24NNxwqNU5K02I&callback=initMap" async defer></script>
+
+              <script type="text/javascript">
                 function initMap() {
+
                   var mapDiv = document.getElementById('google-maps');
+
+                  var myLongLat = {lat: 43.59709, lng: -79.74604};
+
                   var map = new google.maps.Map(mapDiv, {
-                      center: {lat: 44.540, lng: -78.546},
-                      zoom: 8
+                      center: {lat: 43.59709, lng: -79.74604},
+                      zoom: 11,
+                      styles: [
+                        {
+                          featureType: 'all',
+                          stylers: [
+                            { saturation: -80 }
+                          ]
+                        },{
+                          featureType: 'road.arterial',
+                          elementType: 'geometry',
+                          stylers: [
+                            { hue: '#00ffee' },
+                            { saturation: 50 }
+                          ]
+                        },{
+                          featureType: 'poi.business',
+                          elementType: 'labels',
+                          stylers: [
+                            { visibility: 'off' }
+                          ]
+                        }
+                      ]
+                  });
+
+                  var marker = new google.maps.Marker({
+                    position: myLongLat,
+                    map: map,
                   });
                 }
+
+
+
               </script>
-              <script async defer
-                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyerVxVUe9Hn08pP-IF24NNxwqNU5K02I&callback=initMap">
-              </script>
+
+
+              <!-- /GOOGLE MAPS API -->
+
             </div>
 
 
@@ -179,12 +223,15 @@
 
 
 
+
           <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
           <script src="libraries/bootstrap-3.3.7/js/bootstrap.min.js"></script>
           <!-- Include all compiled plugins (below), or include individual files as needed -->
 
           <script src="js/main.js"></script>
+
 
         </footer>
     </body>
