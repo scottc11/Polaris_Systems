@@ -72,6 +72,10 @@ hr {
   margin-top: 20px;
 }
 
+.margin-bottom-60 {
+  margin-bottom: 60px;
+}
+
 .margin-minimal {
   margin: 5px 0 5px 0;
 }
@@ -90,6 +94,9 @@ hr {
   font-weight: normal;
 }
 
+.bigger-text {
+  font-size: 1.3em;
+}
 
 /*FLOATS*/
 .float-left {
@@ -378,6 +385,32 @@ hr {
   width: 100%;
 }
 
+.product-image-container {
+  width: 100%;
+}
+
+.product-image-container img {
+
+}
+
+.product-thumbnail {
+  height: 100px;
+  background-color: #C4E0EB;
+}
+
+.description-container {
+  width: 100%;
+  height: auto;
+  background-color: #3DC7C9;
+  padding: 30px;
+}
+
+
+.product-suggestion-thumbnail {
+  height: 150px;
+  background-color: #C4E0EB;
+}
+
 /*--------------------------------------*/
 /*        FOOTER                        */
 /*--------------------------------------*/
@@ -389,6 +422,7 @@ hr {
 .footer-container {
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-top: 60px;
 }
 
 .footer-location ul {
