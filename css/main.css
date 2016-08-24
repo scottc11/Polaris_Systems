@@ -398,18 +398,57 @@ hr {
   background-color: #C4E0EB;
 }
 
-.description-container {
+.product-suggestion-thumbnail {
+  height: 150px;
+  background-color: #C4E0EB;
+}
+
+.description-style {
+  display: none;
   width: 100%;
   height: auto;
   background-color: #3DC7C9;
   padding: 30px;
 }
 
-
-.product-suggestion-thumbnail {
-  height: 150px;
-  background-color: #C4E0EB;
+.specifications-style {
+  display: none;
+  width: 100%;
+  height: auto;
+  background-color: #00aeef;
+  padding: 30px;
+  color: white;
 }
+
+.tab-box {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tab-box a li {
+  display: inline-block;
+  width: 40%;
+  background-color: #00aeef;
+  padding: 10px 30px 10px 30px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.selected-tab {
+  background-color: #3DC7C9;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
 
 /*--------------------------------------*/
 /*        FOOTER                        */
